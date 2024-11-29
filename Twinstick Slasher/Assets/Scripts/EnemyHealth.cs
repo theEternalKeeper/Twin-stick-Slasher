@@ -30,4 +30,14 @@ public class EnemyHealth : MonoBehaviour
     {
         currentHealth -= damage;
     }
+
+    void OnTriggerEnter (Collider collider)
+    {
+        Debug.Log("Collision detected");
+        if (collider.gameObject.CompareTag("PlayerAttack"))
+        {
+            Debug.Log("Damage taken");
+            TakeDamage(1);
+        }
+    }
 }
