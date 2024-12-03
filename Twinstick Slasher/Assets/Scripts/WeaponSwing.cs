@@ -9,7 +9,7 @@ public class WeaponSwing : MonoBehaviour
     public float swingSpeed = 1f;
     Vector3 startPosition;
     Quaternion startRotation;
-    float swingTime = 0.5f;
+    float swingTime = 0.25f;
     float swingTimer = 0;
 
     // Start is called before the first frame update
