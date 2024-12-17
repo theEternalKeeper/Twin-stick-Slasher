@@ -38,6 +38,9 @@ public class EnemyHealth : MonoBehaviour
         {
             Debug.Log("Damage taken");
             TakeDamage(1);
+
+            Vector3 contactPosition = collider.ClosestPoint(gameObject.transform.position);
+            gameObject.GetComponent<EnemyMove>().knockBack(contactPosition, gameObject);
         }
     }
 }
