@@ -135,6 +135,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  attackTime: 1.5
+  knockbackForce: 250
 --- !u!195 &6916098557534588364
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -166,7 +168,7 @@ Rigidbody:
   m_GameObject: {fileID: 852812154406248638}
   serializedVersion: 4
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 1
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}

@@ -11,6 +11,7 @@ public class EnemyMove : MonoBehaviour
     [SerializeField]
     float attackTime = 1.5f;
     int damage = 3;
+    float attackRange = 2f;
     float attackTimer = 0;
     public float knockbackForce = 250;
 
@@ -27,19 +28,20 @@ public class EnemyMove : MonoBehaviour
         attackTimer += Time.deltaTime;
         target = player.transform;
         agent.SetDestination(target.position);
+        float distance = Vector3.Distance(player.transform.position, gameObject.transform.position);
 
-    }
-
-    void OnCollissionEnter(Collision collider)
-    {
-        if (collider.transform.tag == "Player") 
+        if (attackTimer >= attackTime && distance <= attackRange)
         {
-           collider.gameObject.GetComponent<PlayerHealth>().TakeDamage(damage);
-           
+            Attack();
         }
-
-
     }
+
+    void Attack()
+    {
+        player.GetComponent<PlayerHealth>().TakeDamage(damage);
+        attackTimer = 0;
+    }
+
     public void knockBack(Vector3 contactPosition, GameObject enemy)
     {
         Debug.Log("Knockback");

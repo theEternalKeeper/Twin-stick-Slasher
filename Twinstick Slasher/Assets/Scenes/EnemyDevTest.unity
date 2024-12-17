@@ -420,6 +420,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  attackTime: 1.5
   knockbackForce: 250
 --- !u!54 &393152476
 Rigidbody:
@@ -1462,21 +1463,33 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
-    - target: {fileID: 3404520068468614991, guid: c0b7bd5cdefc60945977830e67b3976e, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 13400000, guid: 361c74f029445ab4f9accaccb56235f2, type: 2}
+    - target: {fileID: 6916098557534588364, guid: c0b7bd5cdefc60945977830e67b3976e, type: 3}
+      propertyPath: m_Speed
+      value: 3.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6916098557534588364, guid: c0b7bd5cdefc60945977830e67b3976e, type: 3}
       propertyPath: m_Radius
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6916098557534588364, guid: c0b7bd5cdefc60945977830e67b3976e, type: 3}
       propertyPath: m_AngularSpeed
-      value: 80
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 7370615817380533058, guid: c0b7bd5cdefc60945977830e67b3976e, type: 3}
+      propertyPath: m_Drag
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7370615817380533058, guid: c0b7bd5cdefc60945977830e67b3976e, type: 3}
       propertyPath: m_Mass
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7370615817380533058, guid: c0b7bd5cdefc60945977830e67b3976e, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7370615817380533058, guid: c0b7bd5cdefc60945977830e67b3976e, type: 3}
+      propertyPath: m_Constraints
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7370615817380533058, guid: c0b7bd5cdefc60945977830e67b3976e, type: 3}
       propertyPath: m_Interpolate
@@ -1484,11 +1497,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7370615817380533058, guid: c0b7bd5cdefc60945977830e67b3976e, type: 3}
       propertyPath: m_IsKinematic
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7370615817380533058, guid: c0b7bd5cdefc60945977830e67b3976e, type: 3}
       propertyPath: m_CollisionDetection
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8059164406411363083, guid: c0b7bd5cdefc60945977830e67b3976e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1606,3 +1619,4 @@ SceneRoots:
   - {fileID: 2824737357984098405}
   - {fileID: 624785288}
   - {fileID: 811262280}
+  - {fileID: 393152473}
