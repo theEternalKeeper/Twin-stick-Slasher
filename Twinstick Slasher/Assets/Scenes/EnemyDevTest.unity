@@ -263,8 +263,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 151416281}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< Updated upstream
-=======
 --- !u!1 &393152468
 GameObject:
   m_ObjectHideFlags: 0
@@ -450,7 +448,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 84
   m_CollisionDetection: 0
->>>>>>> Stashed changes
 --- !u!1 &415647739
 GameObject:
   m_ObjectHideFlags: 0
