@@ -8,11 +8,15 @@ public class PlayerHealth : MonoBehaviour
     int startHealth = 10;
     [SerializeField]
     int currentHealth;
+
+    public HealthBar healthBar;
     
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = startHealth;
+        healthBar = GameObject.Find("PlayerHealthBar").GetComponent<HealthBar>();
+        healthBar.SetMaxHealth(startHealth);
     }
 
     // Update is called once per frame
@@ -27,5 +31,6 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
+        healthBar.SetHealth(currentHealth);
     }
 }
